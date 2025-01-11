@@ -11,9 +11,11 @@ the project
 ## Running the project
 
 ### Live version
+
 - [Project](https://medium.com/chingu/keys-to-a-well-written-readme-55c53d34fe6d)
 
 ### From the repo
+
 - `git clone https://github.com/chingu-voyages/V53-tier1-team-01.git`
 - `cd V53-tier1-team-01.git`
 - open `index.html`
@@ -36,10 +38,9 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 - Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
 - Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
 
-
 ## Our Team
 
 - Nate : [Github](https://github.com/NatnaelSisay)
-- Teammate name #2: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Molly: [GitHub](https://github.com/learningcoding2022) / [LinkedIn](https://www.linkedin.com/in/molly-b-97877492/)
 
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
