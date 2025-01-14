@@ -42,5 +42,5 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 
 - Nate : [Github](https://github.com/NatnaelSisay)
 - Molly: [GitHub](https://github.com/learningcoding2022) / [LinkedIn](https://www.linkedin.com/in/molly-b-97877492/)
-
+- Valerie: [GitHub](https://github.com/val-ue) / [LinkedIn] (https://www.linkedin.com/in/valerielabideveloper/)
 - Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
