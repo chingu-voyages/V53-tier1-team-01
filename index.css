@@ -1,0 +1,60 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: FFFAF5;
+}
+
+body {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: green;
+    width:100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.setup {
+    display: flex;
+    align-items: left;    
+}
+
+.allergy-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.allergens {
+    display: flex;
+    flex-direction: row;
+}
+.allergen {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+}
+
+.weekday-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.finalize {
+    display: flex;
+    justify-content: end;
+}
