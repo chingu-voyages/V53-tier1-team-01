@@ -4,25 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Your Page Title</title>
     </head>
 
     <body>
         <header>
-            <section class="setup">
-                <h1>Weekly Menu</h1>
-                <button class="copy">"copy icon"</button>
-                <button class="calendar">"calendar icon"</button>
-            </section>
+            <div class="header-group">
+                <section class="setup">
+                    <h1>Weekly Menu</h1>
+                    <!-- <button class="copy"> --><i class="fa fa-copy copy icon"></i><!-- </button> -->
+                    <!-- <button class="calendar"> --><i class="fa fa-calendar calendar-icon icon"></i><!--</button>-->
+                </section>
 
-            <section class="allergens">
-                <h2>Allergens</h2>
-                <ul class="allergy-list">
-                    <li class="allergen"><button class="checkbox">.</button><p>soy</p></li>
-                    <li class="allergen"><button class="checkbox">.</button><p>eggs</p></li>
-                    <li class="allergen"><button class="checkbox">.</button><p>nuts</p></li>
-                    <li class="allergen"><button class="checkbox">.</button><p>dairy</p></li>
-                </ul>
+                <section class="allergens">
+                    <h2>Allergens</h2>
+                    <ul class="allergy-list">
+                        <li class="allergen"><input type="checkbox" class="checkbox"><p>soy</p></li>
+                        <li class="allergen"><input type="checkbox"></button><p>eggs</p></li>
+                        <li class="allergen"><input type="checkbox"></button><p>nuts</p></li>
+                        <li class="allergen"><input type="checkbox"></button><p>dairy</p></li>
+                    </ul>
+                </section>
+            </div>    
+
+            <section class="calendar">
+                <p>where the calendar will go</p>
             </section>
         </header>
 
