@@ -14,13 +14,81 @@ body {
 }
 
 header {
-    background-color: green;
+    background-color: hsla(178, 47%, 30%, 1);
     width:100%;
     display: flex;
     align-items: left;
     justify-content: center;
     flex-direction: column;
 }
+
+.food {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.palette {
+    display: flex;
+    flex-direction: row;
+    width:90%;
+}
+
+#div1 {
+    background-color: hsla(190, 44%, 24%, 1);
+}
+#div2 {
+    background-color: hsla(178, 47%, 30%, 1);
+}
+#div3 {
+    background-color: hsla(174, 49%, 39%, 1);
+}
+#div4 {
+    background-color: hsla(44, 72%, 66%, 1);
+}
+#div5 {
+    background-color: hsla(27, 87%, 68%, 1);
+}
+#div6 {
+    background-color: hsla(18, 79%, 64%, 1);
+}
+#div7 {
+    background-color: hsla(11, 75%, 60%, 1);
+}
+
+.monday {
+    background-color: hsla(190, 44%, 6%, 1);
+}
+.tuesday {
+    background-color: hsla(178, 47%, 12%, 1);
+}
+.wednesday {
+    background-color: hsla(174, 49%, 21%, 1);
+}
+.thursday {
+    background-color: hsla(44, 72%, 46%, 1);
+}
+.friday {
+    background-color: hsla(27, 87%, 50%, 1); 
+}
+.saturday {
+    background-color: hsla(18, 79%, 46%, 1);
+}
+.sunday {
+    background-color: hsla(11, 75%, 42%, 1);
+}
+
+
+.bubble {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    align-items: center;
+    margin: 5% 5%;
+}
+
 
 .setup {
     display: flex;
@@ -47,14 +115,32 @@ main {
     width: 100%;
 }
 
+.day {
+    /* background-color: rgba(38, 70, 83, 0.2); */
+    border-radius: 15px;
+    text-align: center;
+    width: 120%;
+    color: beige;
+}
+
+.weekday {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
 .weekday-list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: center;
     padding: 0;
+    gap: 20px;
 }
 
 .finalize {
     display: flex;
     justify-content: end;
 }
+
