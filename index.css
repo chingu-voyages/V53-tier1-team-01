@@ -96,7 +96,7 @@ header {
     width: 82%;
     height: 74%;
     background-color: rgba(255, 255, 255, 0.6);
-    text-align: center;
+    justify-content: center;
     align-items: center;
     margin: 5% 5%;
 }
@@ -192,3 +192,7 @@ main {
     margin-top: 17px;
 }
 
+/*classes for the pop-up calendar*/
+.hidden {
+  display: none;
+}
