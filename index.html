@@ -30,12 +30,16 @@
                 </section>
             </div>    
 
+            <!--This html worked to create the calendar-commenting out for now-->
+            
             <section class="calendar">
                 <p>where the calendar will go</p>
 
-                <!--trial-->
                 <label for="date">Select a date:</label>
                 <input type="date" id="date" name="date">
+
+
+ 
                 
                 <!--add-calendar is the pop-up window-->
 <!--            <div id="add-calendar" class="hidden">
@@ -52,66 +56,75 @@
 
         <main>
             <section class="weekly-calendar">
-                <ul class="weekday-list">
+                <ul class="weekday-list" id="days">
                     <li class="weekday" id="div1">
-                        <div class="day monday">
-                            <h3 class= "monday-h3">Monday</h3>
+                        <div class="box sunday">
+                            <h3 class= "sunday-h3">Sunday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day1">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div2">
-                        <div class="day tuesday">
-                            <h3 class= "weekday-h3">Tuesday</h3>
+                        <div class="box monday">
+                            <h3 class= "monday-h3">Monday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day2">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div3">
-                        <div class="day wednesday">
-                            <h3 class="wednesday-h3">Wednesday</h3>
+                        <div class="box tuesday">
+                            <h3 class="tuesday-h3">Tuesday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day3">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div4">
-                        <div class="day thursday">
-                            <h3 class="thursday-h3">Thursday</h3>
+                        <div class="box wednesday">
+                            <h3 class="wednesday-h3">Wednesday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day4">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div5">
-                        <div class="day friday">
-                            <h3 class="friday-h3">Friday</h3>
+                        <div class="box thursday">
+                            <h3 class="thursday-h3">Thursday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day5">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div6">
-                        <div class="day saturday">
-                            <h3 class="saturday-h3">Saturday</h3>
+                        <div class="box friday">
+                            <h3 class="friday-h3">Friday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day6">
                             <p>Food goes here</p>
                         </div>
                     </li>
 
                     <li class="weekday" id="div7">
-                        <div class="day sunday">
-                            <h3 class="sunday-h3">Sunday</h3>
+                        <div class="box saturday">
+                            <h3 class="saturday-h3">Saturday</h3>
                         </div>
-                        <div class="bubble">
+                        <div class="bubble" id="day7">
+                            <p>Food goes here</p>
+                        </div>
+                    </li>
+
+                    <li class="weekday" id="div8">
+                        <div class="box saturday">
+                            <h3 class="saturday-h3">ghost</h3>
+                        </div>
+                        <div class="bubble" id="day8">
                             <p>Food goes here</p>
                         </div>
                     </li>
@@ -135,3 +148,5 @@
 
     </body>
 </html>
+
+

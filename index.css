@@ -68,25 +68,25 @@ header {
     background-color: hsla(11, 75%, 60%, 1);
 }
 
-.monday {
+.sunday {
     background-color: hsla(190, 44%, 6%, 1);
 }
-.tuesday {
+.monday {
     background-color: hsla(178, 47%, 12%, 1);
 }
-.wednesday {
+.tuesday {
     background-color: hsla(174, 49%, 21%, 1);
 }
-.thursday {
+.wednesday {
     background-color: hsla(44, 72%, 46%, 1);
 }
-.friday {
+.thursday {
     background-color: hsla(27, 87%, 50%, 1); 
 }
-.saturday {
+.friday {
     background-color: hsla(18, 79%, 46%, 1);
 }
-.sunday {
+.saturday {
     background-color: hsla(11, 75%, 42%, 1);
 }
 
@@ -158,7 +158,7 @@ main {
     height: 80%;
 }
 
-.day {
+.box {
     /* background-color: rgba(38, 70, 83, 0.2); */
     border-radius: 15px;
     text-align: center;
@@ -196,3 +196,6 @@ main {
 .hidden {
   display: none;
 }
+
+
+        
