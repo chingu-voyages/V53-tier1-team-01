@@ -7,32 +7,32 @@ button.addEventListener('click', function () {
 
 //test
 
-document.getElementById('date').addEventListener('change', function(event) {
-    const selectedDate = new Date(event.target.value);
-    if (isNaN(selectedDate)) return; // Exit if the date is invalid
+const button = document.querySelector('h1');
+
+button.addEventListener('click', function () {
+    button.innerText = 'Clicked'; 
+    console.log("copy button clicked");
+});
+
+//new test
+//our stuff
+
+//selects the calendar
+//const getDate = document.getElementById('date');
+//console.log(getDate);
+
+//taking the input and 
+/*getDate.addEventListener('input', function(e) {
+    const clickedDay = new Date (e.target.value);  
+    //console.log(clickedDay);
+
+    //assigned Sunday to index 0, Monday to index 1, Tuesday to index 2, Wednesday to index 3, Thursday to index 4, Friday to index 5, Saturday to index 6
+    let weekDay = Date.getDay();
+    console.log(weekDay);
+
     
-    const daysDivs = ['day1','day2','day3', 'day4', 'day5', 'day6', 'day7', 'day8'];
-    
-    // clear "food goes here"
-    daysDivs.forEach(id => document.getElementById(id).innerHTML = '');
-  
-    // sets starting day
-    let dayIndex = selectedDate.getDay();
-    
 
-    daysDivs.forEach((id, index) => {
-
-
-     // if (dayIndex <= 6) { 
-        const currentDate = new Date(selectedDate);
-        currentDate.setDate(selectedDate.getDate() + (index + 1) - (dayIndex + 1));
-         /*document.getElementById(id).innerHTML = `${(index + 1) - (dayIndex + 1)}`;*/ 
-         document.getElementById(id).innerHTML = currentDate.toDateString() + `#${(index + 1) - (dayIndex + 1)}`; 
-
-     // }
-      
-    });
-  });
+}); */
 
 
   
