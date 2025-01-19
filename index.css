@@ -192,10 +192,21 @@ main {
     margin-top: 17px;
 }
 
-/*classes for the pop-up calendar*/
+/*classes for the pop-up calendar
 .hidden {
   display: none;
 }
+
+.blue-sunday {
+    background-color: #3498db !important; 
+    color: white !important;
+}
+
+.gray-day {
+    background-color: #d3d3d3 !important; 
+    color: #888 !important;
+} */
+
 
 
         
