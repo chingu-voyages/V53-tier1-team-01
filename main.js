@@ -1,10 +1,15 @@
+import { dishes } from './assets/arrays.js';
+import { allergies } from './assets/arrays.js';
+
 const button = document.querySelector('h1');
 
 button.addEventListener('click', function () {
     button.innerText = 'Clicked'; 
     console.log("copy button clicked");
-});
+}); 
 
+console.log(dishes);
+console.log(allergies);
 
 //selects the calendar-------------------------------------------------------------------------------------------------------------------/
 const getDate = document.getElementById('date');
@@ -40,23 +45,60 @@ getDate.addEventListener('input', function(e) {
     console.log(dates);
 
     //grabbing the variables for the days of the week to be used in the colored bubbles
-    const sunday = document.getElementById('day1');
-    const monday = document.getElementById('day2');
-    const tuesday = document.getElementById('day3');
-    const wednesday = document.getElementById('day4');
-    const thursday = document.getElementById('day5');
-    const friday = document.getElementById('day6');
-    const saturday = document.getElementById('day7');
+    const sunday = document.getElementById('day1name');
+    const monday = document.getElementById('day2name');
+    const tuesday = document.getElementById('day3name');
+    const wednesday = document.getElementById('day4name');
+    const thursday = document.getElementById('day5name');
+    const friday = document.getElementById('day6name');
+    const saturday = document.getElementById('day7name');
 
     //placing the dates in the colored boxes
-    sunday.innerText = `Sunday: ${dates[0]}`;
-    monday.innerText = `Monday: ${dates[1]}`;
-    tuesday.innerText = `Tuesday: ${dates[2]}`;
-    wednesday.innerText = `Wednesday: ${dates[3]}`;
-    thursday.innerText = `Thursday: ${dates[4]}`;
-    friday.innerText = `Friday: ${dates[5]}`;
-    saturday.innerText = `Saturday: ${dates[6]}`;
+    sunday.innerText = `${dishes[0].name}`;
+    monday.innerText = `${dishes[1].name}`;
+    tuesday.innerText = `${dishes[2].name}`;
+    wednesday.innerText = `${dishes[3].name}`;
+    thursday.innerText = `${dishes[4].name}`;
+    friday.innerText = `${dishes[5].name}`;
+    saturday.innerText = `${dishes[6].name}`;
+
+    //getting variables for the ingredients
+
+    const sundayIngredients = document.getElementById('day1ingredients');
+    const mondayIngredients = document.getElementById('day2ingredients');
+    const tuesdayIngredients = document.getElementById('day3ingredients');
+    const wednesdayIngredients = document.getElementById('day4ingredients');
+    const thursdayIngredients = document.getElementById('day5ingredients');
+    const fridayIngredients = document.getElementById('day6ingredients');
+    const saturdayIngredients = document.getElementById('day7ingredients');
+
+    sundayIngredients.innerText = `${dishes[0].ingredients}`;
+    mondayIngredients.innerText = `${dishes[1].ingredients}`;
+    tuesdayIngredients.innerText = `${dishes[2].ingredients}`;
+    wednesdayIngredients.innerText = `${dishes[3].ingredients}`;
+    thursdayIngredients.innerText = `${dishes[4].ingredients}`;
+    fridayIngredients.innerText = `${dishes[5].ingredients}`;
+    saturdayIngredients.innerText = `${dishes[6].ingredients}`;
+
+    //getting variables for the calories
+
+    const sundayCalories = document.getElementById('day1calories');
+    const mondayCalories = document.getElementById('day2calories');
+    const tuesdayCalories = document.getElementById('day3calories');
+    const wednesdayCalories = document.getElementById('day4calories');
+    const thursdayCalories = document.getElementById('day5calories');
+    const fridayCalories = document.getElementById('day6calories');
+    const saturdayCalories = document.getElementById('day7calories');
+    
+    sundayCalories.innerText = `Calories:${dishes[0].calories}`;
+    mondayCalories.innerText = `Calories:${dishes[1].calories}`;
+    tuesdayCalories.innerText = `Calories:${dishes[2].calories}`;
+    wednesdayCalories.innerText = `Calories:${dishes[3].calories}`;
+    thursdayCalories.innerText = `Calories:${dishes[4].calories}`;
+    fridayCalories.innerText = `Calories:${dishes[5].calories}`;
+    saturdayCalories.innerText = `Calories:${dishes[6].calories}`;
 }); 
+
 
 //prevents people from clicking days other than sunday
 getDate.addEventListener('change', function() {
@@ -68,4 +110,6 @@ getDate.addEventListener('change', function() {
     }
 });
     
+
+
 
