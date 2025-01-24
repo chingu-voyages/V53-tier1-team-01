@@ -8,7 +8,7 @@ button.addEventListener('click', function () {
     console.log("copy button clicked");
 }); 
 
-console.log(dishes);
+//console.log(dishes);
 //console.log(allergies);
 
 //selects the calendar-------------------------------------------------------------------------------------------------------------------/
@@ -96,19 +96,24 @@ getDate.addEventListener('input', function(e) {
 
     //test
     document.addEventListener ("DOMContentLoaded", function ()  {
-        const checkBoxes = document.querySelectorAll('checkbox');
+        const checkBoxes = document.querySelectorAll('input[type="checkbox"]');
         const allergiesList = document.querySelectorAll("allergy-list li");
 
         //add event listener to each checkbox
-        [...checkBoxes].forEach(function (checkBox) {
+        checkBoxes.forEach(function (checkBox) {
             checkBox.addEventListener("click", function() {
-                const filter = checkBox.getAttribute("allergen");
+                //const filter = checkBoxes.getAttribute("allergen");
+                console.log('checkboxes work');
             }
         )
+
+        treeNuts.addEventListener ('click', function() {
+            console.log('checkboxes work');
+        });
             
         
                 // Filter the list items
-                allergiesList.forEach('allergen', function() {
+                allergiesList.forEach(allergen, function() {
                     const category = allergy.getAttribute("allergen");
                     if (filter === "all" || category === filter) {
                         dishes.style.display = ""; // Show the item
@@ -189,3 +194,63 @@ getDate.addEventListener('change', function() {
 });
 
 
+//const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
+//console.log(weekIngredients);
+
+
+
+/*const dishesWithAllergens = dishes.filter(dish =>
+    dish.some(ingredients => allergies.includes('Garlic'))
+);
+
+console.log(dishesWithAllergens);
+
+const deleteFood = function (badfood) {
+
+    if (weekIngredients.includes('Garlic')
+    //    /*dishes.ingredients.includes(badfood)*///) {
+   //     console.log(`this includes ${badfood}`);
+  //  }
+
+   //delete badfood from bubbles;
+//}
+
+//treeNuts.addEventListener ('click', deleteFood(treeNuts));
+//garlic.addEventListener ('click', deleteFood(garlic));
+//milk.addEventListener ('click', deleteFood(milk));
+
+//deleteFood(garlic); */
+
+//
+
+const dishesWithGarlic = [];
+
+for (let i = 0; i < dishes.length; i++) {
+    if (dishes[i].ingredients.includes("Garlic")) {
+
+        dishesWithGarlic.push(dishes[i]);
+        //pass it to the disheswith garlic Array;
+        console.log(dishesWithGarlic);
+        console.log('Garlic array');
+    }
+};
+
+const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
+
+for (let i=0; i < weekIngredients.length; i++) {
+    if (weekIngredients[i].includes(dishesWithGarlic[i])) {
+        console.log("one of the meals this week contains garlic");
+    }
+}
+
+//includes cant compare two arrays directly
+
+/*
+const hasGarlic = dishesWithGarlic.some(element => weekIngredients.includes(element));
+console.log(hasGarlic);
+*/
+
+/*make it so when the meals are generated, 
+ we use an if statement that will use the 
+ arrays generated from line 240 and do something like 
+ "if the checkbox is clicked, exclude the food from foodswithgarlic"*/
