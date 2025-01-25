@@ -41,46 +41,119 @@ getDate.addEventListener('input', function(e) {
         date.setDate(clickedDay.getDate() + i); //takes the day of the month from the selected day and adds and index number to it (which then gives us the day of the week)
         dates.push(date.getDate()); //takes the date of the month of the selected day and pushes this to the dates array (which shows up in the colored boxes)
     }
+
+    function shuffle(dishes) {
+        let theWeeksDishes = dishes.length;
+      
+        // continue the loop While there are remaining dishes to shuffle
+        while (theWeeksDishes != 0) {
+            
+          let randomIndex = Math.floor(Math.random() * theWeeksDishes);
+          theWeeksDishes--;
+      
+          // swaps with the current dishes.
+            [dishes[theWeeksDishes], dishes[randomIndex]] = [
+                dishes[randomIndex], dishes[theWeeksDishes]]; //swaps the element in the last unshuffled position(theWeeksDishes) with a randomly chosen element(randomIndex)
+        }
+    
+        return dishes;
+        
+    }
+    
+    const shuffledDishes = shuffle(dishes);
+    console.log(shuffledDishes);
+    
+        //grabbing the variables for the days of the week to be used in the colored bubbles
+        const sunday = document.getElementById('day1name');
+        const monday = document.getElementById('day2name');
+        const tuesday = document.getElementById('day3name');
+        const wednesday = document.getElementById('day4name');
+        const thursday = document.getElementById('day5name');
+        const friday = document.getElementById('day6name');
+        const saturday = document.getElementById('day7name');
+    
+        //placing the dates in the colored boxes
+        sunday.innerText = `${dishes[0].name}`;
+        monday.innerText = `${dishes[8].name}`; //has garlic
+        tuesday.innerText = `${dishes[26].name}`; //has chocolate
+        wednesday.innerText = `${dishes[15].name}`; //has milk
+        thursday.innerText = `${dishes[4].name}`;
+        friday.innerText = `${dishes[5].name}`;
+        saturday.innerText = `${dishes[6].name}`;
+
+            //getting variables for the ingredients
+
+    const sundayIngredients = document.getElementById('day1ingredients');
+    const mondayIngredients = document.getElementById('day2ingredients');
+    const tuesdayIngredients = document.getElementById('day3ingredients');
+    const wednesdayIngredients = document.getElementById('day4ingredients');
+    const thursdayIngredients = document.getElementById('day5ingredients');
+    const fridayIngredients = document.getElementById('day6ingredients');
+    const saturdayIngredients = document.getElementById('day7ingredients');
+
+    sundayIngredients.innerText = `${dishes[0].ingredients}`;
+    mondayIngredients.innerText = `${dishes[8].ingredients}`;
+    tuesdayIngredients.innerText = `${dishes[26].ingredients}`;
+    wednesdayIngredients.innerText = `${dishes[15].ingredients}`;
+    thursdayIngredients.innerText = `${dishes[4].ingredients}`;
+    fridayIngredients.innerText = `${dishes[5].ingredients}`;
+    saturdayIngredients.innerText = `${dishes[6].ingredients}`;
+
+    //getting variables for the calories
+
+    const sundayCalories = document.getElementById('day1calories');
+    const mondayCalories = document.getElementById('day2calories');
+    const tuesdayCalories = document.getElementById('day3calories');
+    const wednesdayCalories = document.getElementById('day4calories');
+    const thursdayCalories = document.getElementById('day5calories');
+    const fridayCalories = document.getElementById('day6calories');
+    const saturdayCalories = document.getElementById('day7calories');
+    
+    sundayCalories.innerText = `Calories:${dishes[0].calories}`;
+    mondayCalories.innerText = `Calories:${dishes[8].calories}`;
+    tuesdayCalories.innerText = `Calories:${dishes[26].calories}`;
+    wednesdayCalories.innerText = `Calories:${dishes[15].calories}`;
+    thursdayCalories.innerText = `Calories:${dishes[4].calories}`;
+    fridayCalories.innerText = `Calories:${dishes[5].calories}`;
+    saturdayCalories.innerText = `Calories:${dishes[6].calories}`;
+   
+
 });
 
     //console.log(dates);
 
     //variables for randomizing
-    
+
     /*let sundayMeal = 0;
     let mondayMeal = 1;
     let tuesdayMeal = 2;
     let wednesdayMeal = 3;
     let fridayMeal = 4;
     let saturdayMeal = 5; */
-    
-    
+
+
     //pick 7 meals/items in the array
     //check if there is a duplicate
     //if there is a duplicate reassign
     //assign each result a variable name
     //have code show up in the colored boxes
 
-/* DONT DELETE ================================DONT DELETE======================================
-    //Fisher–Yates shuffle (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
-    function shuffle(dishes) {
-        let theWeeksDishes = dishes.length;
-      
-        // continue the loop While there are remaining dishes to shuffle
-        while (theWeeksDishes != 0) {
-      
-          // Pick a remaining dish
-          let randomIndex = Math.floor(Math.random() * theWeeksDishes);
-          theWeeksDishes--;
-      
-          // And swap it with the current dishes.
-            [dishes[theWeeksDishes], dishes[randomIndex]] = [
-                dishes[randomIndex], dishes[theWeeksDishes]]; //swaps the element in the last unshuffled position(theWeeksDishes) with a randomly chosen element(randomIndex)
-        }
-    };
-        //calling the function "dishes"
-        shuffle(dishes);
-      //console.log(dishes); ============DONT DELETEe========================================== */ 
+   
+//Fisher–Yates shuffle (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+
+
+
+/*
+    shuffle(dishes);
+    //shuffle(dishes);
+
+    const shuffledDishes = shuffle(dishes);
+    console.log(shuffledDishes); */
+
+
+
+    //calling the function "dishes"
+
 
 
     //allergies
@@ -126,63 +199,6 @@ getDate.addEventListener('input', function(e) {
         });
     
 
-
-
-    //grabbing the variables for the days of the week to be used in the colored bubbles
-    const sunday = document.getElementById('day1name');
-    const monday = document.getElementById('day2name');
-    const tuesday = document.getElementById('day3name');
-    const wednesday = document.getElementById('day4name');
-    const thursday = document.getElementById('day5name');
-    const friday = document.getElementById('day6name');
-    const saturday = document.getElementById('day7name');
-
-    //placing the dates in the colored boxes
-    sunday.innerText = `${dishes[0].name}`;
-    monday.innerText = `${dishes[8].name}`; //has garlic
-    tuesday.innerText = `${dishes[26].name}`; //has chocolate
-    wednesday.innerText = `${dishes[15].name}`; //has milk
-    thursday.innerText = `${dishes[4].name}`;
-    friday.innerText = `${dishes[5].name}`;
-    saturday.innerText = `${dishes[6].name}`;
-
-    //getting variables for the ingredients
-
-    const sundayIngredients = document.getElementById('day1ingredients');
-    const mondayIngredients = document.getElementById('day2ingredients');
-    const tuesdayIngredients = document.getElementById('day3ingredients');
-    const wednesdayIngredients = document.getElementById('day4ingredients');
-    const thursdayIngredients = document.getElementById('day5ingredients');
-    const fridayIngredients = document.getElementById('day6ingredients');
-    const saturdayIngredients = document.getElementById('day7ingredients');
-
-    sundayIngredients.innerText = `${dishes[0].ingredients}`;
-    mondayIngredients.innerText = `${dishes[8].ingredients}`;
-    tuesdayIngredients.innerText = `${dishes[26].ingredients}`;
-    wednesdayIngredients.innerText = `${dishes[15].ingredients}`;
-    thursdayIngredients.innerText = `${dishes[4].ingredients}`;
-    fridayIngredients.innerText = `${dishes[5].ingredients}`;
-    saturdayIngredients.innerText = `${dishes[6].ingredients}`;
-
-    //getting variables for the calories
-
-    const sundayCalories = document.getElementById('day1calories');
-    const mondayCalories = document.getElementById('day2calories');
-    const tuesdayCalories = document.getElementById('day3calories');
-    const wednesdayCalories = document.getElementById('day4calories');
-    const thursdayCalories = document.getElementById('day5calories');
-    const fridayCalories = document.getElementById('day6calories');
-    const saturdayCalories = document.getElementById('day7calories');
-    
-    sundayCalories.innerText = `Calories:${dishes[0].calories}`;
-    mondayCalories.innerText = `Calories:${dishes[8].calories}`;
-    tuesdayCalories.innerText = `Calories:${dishes[26].calories}`;
-    wednesdayCalories.innerText = `Calories:${dishes[15].calories}`;
-    thursdayCalories.innerText = `Calories:${dishes[4].calories}`;
-    fridayCalories.innerText = `Calories:${dishes[5].calories}`;
-    saturdayCalories.innerText = `Calories:${dishes[6].calories}`;
-
-
 //prevents people from clicking days other than sunday
 getDate.addEventListener('change', function() {
     const calendarDay = new Date(getDate.value); //taking the clicked day and giving it a date
@@ -221,7 +237,19 @@ const deleteFood = function (badfood) {
 
 //deleteFood(garlic); */
 
-//
+
+// Garlic Filter
+const dishesWithMilk = [];
+
+for (let i = 0; i < dishes.length; i++) {
+    if (dishes[i].ingredients.includes("Milk")) {
+
+        dishesWithMilk.push(dishes[i]);
+        //pass it to the disheswith milk Array;
+     //   console.log(dishesWithMilk);
+     //   console.log('Milk array');
+    }
+};
 
 const dishesWithGarlic = [];
 
@@ -230,16 +258,41 @@ for (let i = 0; i < dishes.length; i++) {
 
         dishesWithGarlic.push(dishes[i]);
         //pass it to the disheswith garlic Array;
-        console.log(dishesWithGarlic);
-        console.log('Garlic array');
+    //    console.log(dishesWithGarlic);
+   //     console.log('Garlic array');
     }
 };
+
+const dishesWithCorn = [];
+
+for (let i = 0; i < dishes.length; i++) {
+    if (dishes[i].ingredients.includes("Corn")) {
+
+        dishesWithCorn.push(dishes[i]);
+        //pass it to the disheswith garlic Array;
+     //   console.log(dishesWithCorn);
+    //    console.log('Corn array');
+    }
+};
+
+const dishesWithChocolate = [];
+
+for (let i = 0; i < dishes.length; i++) {
+    if (dishes[i].ingredients.includes("Chocolate")) {
+
+        dishesWithChocolate.push(dishes[i]);
+        //pass it to the disheswith chocolate Array;
+      //  console.log(dishesWithChocolate);
+     //  console.log('Chocolate array');
+    }
+};
+
 
 const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
 
 for (let i=0; i < weekIngredients.length; i++) {
     if (weekIngredients[i].includes(dishesWithGarlic[i])) {
-        console.log("one of the meals this week contains garlic");
+       // console.log("one of the meals this week contains garlic");
     }
 }
 
@@ -254,3 +307,4 @@ console.log(hasGarlic);
  we use an if statement that will use the 
  arrays generated from line 240 and do something like 
  "if the checkbox is clicked, exclude the food from foodswithgarlic"*/
+ 
