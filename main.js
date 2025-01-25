@@ -42,6 +42,10 @@ getDate.addEventListener('input', function(e) {
         dates.push(date.getDate()); //takes the date of the month of the selected day and pushes this to the dates array (which shows up in the colored boxes)
     }
 
+    //indexesToCheck was here!
+
+
+    //Fisher–Yates shuffle (https:/ / stackoverflow.com / questions / 2450954 / how - to - randomize - shuffle - a - javascript - array)
     function shuffle(dishes) {
         let theWeeksDishes = dishes.length;
       
@@ -62,6 +66,59 @@ getDate.addEventListener('input', function(e) {
     
     const shuffledDishes = shuffle(dishes);
     console.log(shuffledDishes);
+
+    const indexesToCheck = [shuffledDishes[0], shuffledDishes[8], shuffledDishes[26], shuffledDishes[15], shuffledDishes[4], shuffledDishes[5], shuffledDishes[6]];
+    console.log(indexesToCheck);
+
+        //allergens
+
+        const dishesWithMilk = [];
+
+    for (let i = 0; i < shuffledDishes.length; i++) {
+        if (shuffledDishes[i].ingredients.includes("Milk")) {
+
+            dishesWithMilk.push(shuffledDishes[i]);
+            //pass it to the disheswith milk Array;
+        console.log(dishesWithMilk);
+            console.log('Milk array');
+        }
+    };
+    
+    const dishesWithGarlic = [];
+
+    for (let i = 0; i < shuffledDishes.length; i++) {
+        if (shuffledDishes[i].ingredients.includes("Garlic")) {
+
+            dishesWithGarlic.push(shuffledDishes[i]);
+            //pass it to the disheswith garlic Array;
+            console.log(dishesWithGarlic);
+        console.log('Garlic array');
+        }
+    };
+
+    const dishesWithCorn = [];
+
+    for (let i = 0; i < shuffledDishes.length; i++) {
+        if (shuffledDishes[i].ingredients.includes("Corn")) {
+
+            dishesWithCorn.push(shuffledDishes[i]);
+            //pass it to the disheswith garlic Array;
+           console.log(dishesWithCorn);
+            console.log('Corn array');
+        }
+    };
+
+    const dishesWithChocolate = [];
+
+    for (let i = 0; i < shuffledDishes.length; i++) {
+        if (shuffledDishes[i].ingredients.includes("Chocolate")) {
+
+            dishesWithChocolate.push(shuffledDishes[i]);
+            //pass it to the disheswith chocolate Array;
+         console.log(dishesWithChocolate);
+          console.log('Chocolate array');
+        }
+    };
     
         //grabbing the variables for the days of the week to be used in the colored bubbles
         const sunday = document.getElementById('day1name');
@@ -116,7 +173,68 @@ getDate.addEventListener('input', function(e) {
     thursdayCalories.innerText = `Calories:${dishes[4].calories}`;
     fridayCalories.innerText = `Calories:${dishes[5].calories}`;
     saturdayCalories.innerText = `Calories:${dishes[6].calories}`;
-   
+
+    //to remove specified allergen/s
+
+    const treeNuts = document.getElementById('tree-nuts');
+    const garlic = document.getElementById('garlic');
+    const milk = document.getElementById('milk');
+    const gluten = document.getElementById('gluten');
+    const corn = document.getElementById('corn');
+    const chocolate = document.getElementById('chocolate');
+
+    const garlicBox = document.querySelector('#garlic');
+    //console.log(garlicBox);
+    garlicBox.addEventListener('click', function () {
+        console.log('garlic box works');
+
+        //indexesToCheck
+
+        for (let i = 0; i < indexesToCheck.length; i++) {
+            if (dishesWithGarlic.includes(indexesToCheck[i])) {
+                console.log('Match found:', indexesToCheck[i]);
+                shuffle(shuffledDishes);
+                console.log("garlic shuffle works!");
+                //garlic shuffle works; 
+                return(shuffledDishes);
+                //break;  // stops after the first match, remove if you want to find all matches
+            }
+        }
+    })
+});
+        //what do we do when a match is found
+    
+        /*if (indexesToCheck.some(dishesWithGarlic)) {
+            shuffle(dishes);
+            console.log("garlic shuffle works!");
+
+            return(dishes);
+        }
+
+    });
+
+
+
+
+
+    document.addEventListener("click", function () {
+        const checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+        const allergiesList = document.querySelectorAll("allergy-list li");
+
+        //add event listener to each checkbox
+        checkBoxes.forEach(function (checkBox) {
+            checkBox.addEventListener("click", function () {
+                //const filter = checkBoxes.getAttribute("allergen");
+                console.log('checkboxes work');
+            }
+            )
+
+            treeNuts.addEventListener('click', function () {
+                console.log('checkboxes work');
+            });  
+
+        });
+    });
 
 });
 
@@ -138,37 +256,14 @@ getDate.addEventListener('input', function(e) {
     //assign each result a variable name
     //have code show up in the colored boxes
 
-   
-//Fisher–Yates shuffle (https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
-
-
-
-/*
-    shuffle(dishes);
-    //shuffle(dishes);
-
-    const shuffledDishes = shuffle(dishes);
-    console.log(shuffledDishes); */
-
-
-
-    //calling the function "dishes"
-
-
-
     //allergies
 
-    const treeNuts = document.getElementById('tree-nuts');
-    const garlic = document.getElementById('garlic');
-    const milk = document.getElementById('milk');
-    const gluten = document.getElementById('gluten');
-    const corn = document.getElementById('corn');
-    const chocolate = document.getElementById('chocolate');
+
 
     //const checkBox = document.querySelectorAll('checkbox');
 
     //test
-    document.addEventListener ("DOMContentLoaded", function ()  {
+ /*   document.addEventListener ("DOMContentLoaded", function ()  {
         const checkBoxes = document.querySelectorAll('input[type="checkbox"]');
         const allergiesList = document.querySelectorAll("allergy-list li");
 
@@ -196,7 +291,7 @@ getDate.addEventListener('input', function(e) {
                     console.log('hii');
                 });
             });
-        });
+        }); */
     
 
 //prevents people from clicking days other than sunday
@@ -208,7 +303,6 @@ getDate.addEventListener('change', function() {
         getDate.value = ""; // clears the input
     }
 });
-
 
 //const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
 //console.log(weekIngredients);
@@ -239,62 +333,14 @@ const deleteFood = function (badfood) {
 
 
 // Garlic Filter
-const dishesWithMilk = [];
 
-for (let i = 0; i < dishes.length; i++) {
-    if (dishes[i].ingredients.includes("Milk")) {
-
-        dishesWithMilk.push(dishes[i]);
-        //pass it to the disheswith milk Array;
-     //   console.log(dishesWithMilk);
-     //   console.log('Milk array');
-    }
-};
-
-const dishesWithGarlic = [];
-
-for (let i = 0; i < dishes.length; i++) {
-    if (dishes[i].ingredients.includes("Garlic")) {
-
-        dishesWithGarlic.push(dishes[i]);
-        //pass it to the disheswith garlic Array;
-    //    console.log(dishesWithGarlic);
-   //     console.log('Garlic array');
-    }
-};
-
-const dishesWithCorn = [];
-
-for (let i = 0; i < dishes.length; i++) {
-    if (dishes[i].ingredients.includes("Corn")) {
-
-        dishesWithCorn.push(dishes[i]);
-        //pass it to the disheswith garlic Array;
-     //   console.log(dishesWithCorn);
-    //    console.log('Corn array');
-    }
-};
-
-const dishesWithChocolate = [];
-
-for (let i = 0; i < dishes.length; i++) {
-    if (dishes[i].ingredients.includes("Chocolate")) {
-
-        dishesWithChocolate.push(dishes[i]);
-        //pass it to the disheswith chocolate Array;
-      //  console.log(dishesWithChocolate);
-     //  console.log('Chocolate array');
-    }
-};
-
-
-const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
+/*const weekIngredients = [mondayIngredients.innerText, tuesdayIngredients.innerText, wednesday.innerText, thursdayIngredients.innerText, fridayIngredients.innerText, saturdayIngredients.innerText, sundayIngredients.innerText ];
 
 for (let i=0; i < weekIngredients.length; i++) {
     if (weekIngredients[i].includes(dishesWithGarlic[i])) {
        // console.log("one of the meals this week contains garlic");
     }
-}
+} **/
 
 //includes cant compare two arrays directly
 
@@ -307,4 +353,3 @@ console.log(hasGarlic);
  we use an if statement that will use the 
  arrays generated from line 240 and do something like 
  "if the checkbox is clicked, exclude the food from foodswithgarlic"*/
- 
