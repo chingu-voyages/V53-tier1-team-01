@@ -119,6 +119,8 @@ getDate.addEventListener('input', function(e) {
           console.log('Chocolate array');
         }
     };
+
+    //inner html was here!
     
         //grabbing the variables for the days of the week to be used in the colored bubbles
         const sunday = document.getElementById('day1name');
@@ -194,6 +196,62 @@ getDate.addEventListener('input', function(e) {
             if (dishesWithGarlic.includes(indexesToCheck[i])) {
                 console.log('Match found:', indexesToCheck[i]);
                 shuffle(shuffledDishes);
+
+                /*/grabbing the variables for the days of the week to be used in the colored bubbles
+                const sunday = document.getElementById('day1name');
+                const monday = document.getElementById('day2name');
+                const tuesday = document.getElementById('day3name');
+                const wednesday = document.getElementById('day4name');
+                const thursday = document.getElementById('day5name');
+                const friday = document.getElementById('day6name');
+                const saturday = document.getElementById('day7name'); */
+
+                //placing the dates in the colored boxes
+                sunday.innerText = `${dishes[0].name}`;
+                monday.innerText = `${dishes[8].name}`; //has garlic
+                tuesday.innerText = `${dishes[26].name}`; //has chocolate
+                wednesday.innerText = `${dishes[15].name}`; //has milk
+                thursday.innerText = `${dishes[4].name}`;
+                friday.innerText = `${dishes[5].name}`;
+                saturday.innerText = `${dishes[6].name}`;
+
+                /*/getting variables for the ingredients
+
+                const sundayIngredients = document.getElementById('day1ingredients');
+                const mondayIngredients = document.getElementById('day2ingredients');
+                const tuesdayIngredients = document.getElementById('day3ingredients');
+                const wednesdayIngredients = document.getElementById('day4ingredients');
+                const thursdayIngredients = document.getElementById('day5ingredients');
+                const fridayIngredients = document.getElementById('day6ingredients');
+                const saturdayIngredients = document.getElementById('day7ingredients'); */
+
+                sundayIngredients.innerText = `${dishes[0].ingredients}`;
+                mondayIngredients.innerText = `${dishes[8].ingredients}`;
+                tuesdayIngredients.innerText = `${dishes[26].ingredients}`;
+                wednesdayIngredients.innerText = `${dishes[15].ingredients}`;
+                thursdayIngredients.innerText = `${dishes[4].ingredients}`;
+                fridayIngredients.innerText = `${dishes[5].ingredients}`;
+                saturdayIngredients.innerText = `${dishes[6].ingredients}`;
+
+                /*/getting variables for the calories
+
+                const sundayCalories = document.getElementById('day1calories');
+                const mondayCalories = document.getElementById('day2calories');
+                const tuesdayCalories = document.getElementById('day3calories');
+                const wednesdayCalories = document.getElementById('day4calories');
+                const thursdayCalories = document.getElementById('day5calories');
+                const fridayCalories = document.getElementById('day6calories');
+                const saturdayCalories = document.getElementById('day7calories');*/
+
+                sundayCalories.innerText = `Calories:${dishes[0].calories}`;
+                mondayCalories.innerText = `Calories:${dishes[8].calories}`;
+                tuesdayCalories.innerText = `Calories:${dishes[26].calories}`;
+                wednesdayCalories.innerText = `Calories:${dishes[15].calories}`;
+                thursdayCalories.innerText = `Calories:${dishes[4].calories}`;
+                fridayCalories.innerText = `Calories:${dishes[5].calories}`;
+                saturdayCalories.innerText = `Calories:${dishes[6].calories}`;
+
+                
                 console.log("garlic shuffle works!");
                 //garlic shuffle works; 
                 return(shuffledDishes);
@@ -202,6 +260,14 @@ getDate.addEventListener('input', function(e) {
         }
     })
 });
+
+
+/*    const updatedIndexes = indexesToCheck.filter(function(index) {
+                    return !dishesWithGarlic.includes(index);
+                    console.log(updatedIndexes);
+                }); */
+
+                
         //what do we do when a match is found
     
         /*if (indexesToCheck.some(dishesWithGarlic)) {
