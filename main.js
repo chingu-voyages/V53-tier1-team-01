@@ -3,10 +3,13 @@ import { allergies } from './assets/arrays.js';
 
 const button = document.querySelector('h1');
 
+
 button.addEventListener('click', function () {
     button.innerText = 'Clicked'; 
     console.log("copy button clicked");
 }); 
+
+let userAlergies = new Set();
 
 //console.log(dishes);
 //console.log(allergies);
@@ -190,12 +193,36 @@ getDate.addEventListener('input', function(e) {
     garlicBox.addEventListener('click', function () {
         console.log('garlic box works');
 
+        if(userAlergies.has("Garlic")) {
+            userAlergies.delete("Garlic")
+        } else {
+            userAlergies.add("Garlic");
+        }
+
+        console.log("userAlergies", [...userAlergies]);
+        
+
         //indexesToCheck
+
+        
 
         for (let i = 0; i < indexesToCheck.length; i++) {
             if (dishesWithGarlic.includes(indexesToCheck[i])) {
                 console.log('Match found:', indexesToCheck[i]);
                 shuffle(shuffledDishes);
+                //remove the array dishesWithGarlic from the array shuffledDishes
+
+                //const mainArray = [[1, 2], [3, 4], [5, 6]];  this is the shuffledDishes
+                //const arrayToRemove = [3, 4]; //  this is the dishesWithGarlic
+
+                // Use filter to remove the array
+                const arrayWithoutGarlic = shuffledDishes.filter(item =>
+                    JSON.stringify(item) !== JSON.stringify(dishesWithGarlic)
+                );
+
+                console.log(arrayWithoutGarlic);
+                // Output: [[1, 2], [5, 6]]
+
 
                 /*/grabbing the variables for the days of the week to be used in the colored bubbles
                 const sunday = document.getElementById('day1name');
@@ -419,3 +446,48 @@ console.log(hasGarlic);
  we use an if statement that will use the 
  arrays generated from line 240 and do something like 
  "if the checkbox is clicked, exclude the food from foodswithgarlic"*/
+
+import { generateRamdomDishes } from "./util.js"
+
+let ulAlergies = document.getElementById("alergies")
+
+allergies.forEach(allergy => {
+    // Create a <li> element
+    const li = document.createElement("li");
+    li.className = "allergen";
+  
+    // Create the <input> checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "checkbox";
+    checkbox.id = allergy.toLowerCase().replace(/\s+/g, "-");
+    checkbox.value = allergy;
+
+    checkbox.addEventListener("click", handleCheckBoxClick)
+  
+    // Create the <p> element for the allergy text
+    const p = document.createElement("p");
+    p.textContent = allergy;
+  
+    // Append the checkbox and <p> to the <li>
+    li.appendChild(checkbox);
+    li.appendChild(p);
+
+    // Append the <li> to the <ul>
+    ulAlergies.appendChild(li);
+  }
+);
+
+function handleCheckBoxClick(event){
+    console.log("checkbox clicked", event.target.value)
+    let checkBoxValue = event.target.value;
+    
+    if(userAlergies.has(checkBoxValue)) {
+        userAlergies.delete(checkBoxValue)
+    } else {
+        userAlergies.add(checkBoxValue);
+    }
+
+    let randomDishes = generateRamdomDishes(userAlergies, dishes, 7);
+    console.log(randomDishes);
+}
