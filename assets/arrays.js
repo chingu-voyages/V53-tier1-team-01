@@ -4,7 +4,8 @@
     "Milk",
     "Gluten",
     "Corn",
-    "Chocolate"
+    "Chocolate",
+    ""
 ];
 
 //console.log(allergies);

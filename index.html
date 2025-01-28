@@ -18,14 +18,9 @@
                 </section>
 
                 <section class="allergens">
-                    <h2>Allergens</h2>
-                    <ul class="allergy-list">
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="tree-nuts"><p>Tree Nuts</p></li>
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="garlic"> <p>Garlic</p></li>
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="milk"><p>Milk</p></li>
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="gluten"><p>Gluten</p></li>
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="corn"><p>Corn</p></li>
-                        <li class="allergen"><input type="checkbox" class="checkbox" id="chocolate"><p>Chocolate</p></li>
+                    <h2>Allergens</h2> <!--generate in JS-->
+                    <ul class="allergy-list" id="alergies">
+                        
                     </ul>
                 </section>
             </div>    
@@ -131,9 +126,12 @@
             <p>This is the footer</p>
         </footer>
 
-        <script type="module" src="main.js"></script>
-        <script type="module" src="assets/arrays.js"></script>
+        <button id="randomDishes">Random dish</button>
 
+        <script type="module" src="main.js" defer></script>
+        <script type="module" src="assets/arrays.js"></script>
+        
+        <script type="module" src="./util.js" defer></script>
     </body>
 </html>
 
