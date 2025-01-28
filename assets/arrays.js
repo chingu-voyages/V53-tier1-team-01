@@ -1,11 +1,10 @@
- export let allergies = [
+export let allergies = [
     "Tree Nuts",
     "Garlic",
     "Milk",
     "Gluten",
     "Corn",
-    "Chocolate",
-    ""
+    "Chocolate"
 ];
 
 //console.log(allergies);
