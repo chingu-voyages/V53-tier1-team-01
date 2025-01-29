@@ -1,3 +1,5 @@
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
 // use this function to generate random dishes, with ingredients
 export function generateRandomDishes(userAlergies, dishes, numberOfDishes) {
   // generate random dishes, without alergies
@@ -38,4 +40,66 @@ export function generateRandomDishes(userAlergies, dishes, numberOfDishes) {
   }
 
   return Object.values(randomDishes); // ignore index of the dish and return dish detail
+}
+
+export function generateWeeklyFood(randomDishes, userPickedStartDate) {
+  const daysContainer = document.getElementById("days");
+  daysContainer.innerHTML = "";
+  let numberOfDays = 7; // Math.abs(userPickedEndDate - userPickedStartDate);
+
+  for (let startDay = userPickedStartDate; startDay < (userPickedStartDate + numberOfDays); startDay++) {
+      let index = startDay % 7;
+      daysContainer.appendChild(createWeekdayStructure(days[index], index, randomDishes[index]));
+  }
+}
+
+export function createWeekdayStructure(day, index, dish) {
+  // Create the parent list item element
+  const li = document.createElement('li');
+  li.className = 'weekday';
+  li.id = 'div' + (index + 1);
+
+  // Create the first child div with Sunday heading
+  const boxDiv = document.createElement('div');
+  boxDiv.className = `box ${day.toLowerCase()}`;
+
+  const h3 = document.createElement('h3');
+  h3.className = 'h3';
+  h3.textContent = day;
+
+  boxDiv.appendChild(h3);
+  li.appendChild(boxDiv);
+
+  // Create the bubble div
+  const bubbleDiv = document.createElement('div');
+  bubbleDiv.className = 'bubble';
+  bubbleDiv.id = day;
+
+  // Create the foodinfo child divs
+  const dishName = document.createElement('div');
+  dishName.className = 'foodinfo';
+  dishName.id = 'dayname';
+  dishName.innerText = dish.name;
+
+
+  const dishIngredients = document.createElement('div');
+  dishIngredients.className = 'foodinfo';
+  dishIngredients.id = 'dayingredients';
+  dishIngredients.innerText = dish.ingredients;
+
+  const dishCalories = document.createElement('div');
+  dishCalories.className = 'foodinfo';
+  dishCalories.id = 'daycalories';
+  dishCalories.innerText = dish.calories;
+
+  // Append the foodinfo divs to the bubble div
+  bubbleDiv.appendChild(dishName);
+  bubbleDiv.appendChild(dishIngredients);
+  bubbleDiv.appendChild(dishCalories);
+
+  // Append the bubble div to the list item
+  li.appendChild(bubbleDiv);
+
+  // Append the entire structure to the document (e.g., to a parent ul)
+  return li;
 }
