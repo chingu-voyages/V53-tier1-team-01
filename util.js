@@ -1,5 +1,5 @@
 // use this function to generate random dishes, with ingredients
-export function generateRamdomDishes(userAlergies, dishes, numberOfDishes) {
+export function generateRandomDishes(userAlergies, dishes, numberOfDishes) {
   // generate random dishes, without alergies
 
   let currentDishCount = 0;

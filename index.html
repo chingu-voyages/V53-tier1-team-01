@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Your Page Title</title>
     </head>
@@ -20,98 +22,26 @@
                 <section class="allergens">
                     <h2>Allergens</h2> <!--generate in JS-->
                     <ul class="allergy-list" id="alergies">
-                        
+
                     </ul>
                 </section>
-            </div>    
-            
+            </div>
+
             <section class="calendar">
-                <p>where the calendar will go</p>
-                <label for="date">Select a date:</label> 
-                <input type="date" id="date" name="date"> 
+                <label for="date">Select Start date:</label>
+                <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
+            </section>
+
+            <section class="calendar">
+                <label for="date">Select End date:</label>
+                <input type="date" id="calendarEndDatePicker" name="calendarEndDatePicker">
             </section>
         </header>
 
         <main>
             <section class="weekly-calendar">
                 <ul class="weekday-list" id="days">
-                    <li class="weekday" id="div1">
-                        <div class="box sunday">
-                            <h3 class= "sunday-h3">Sunday</h3>
-                        </div>
-                        <div class="bubble" id="day1">
-                            <div class="foodinfo" id="day1name"></div>
-                            <div class="foodinfo" id="day1ingredients"></div>
-                            <div class="foodinfo" id="day1calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div2">
-                        <div class="box monday">
-                            <h3 class= "monday-h3">Monday</h3>
-                        </div>
-                        <div class="bubble" id="day2">
-                            <div class="foodinfo" id="day2name"></div>
-                            <div class="foodinfo" id="day2ingredients"></div>
-                            <div class="foodinfo" id="day2calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div3">
-                        <div class="box tuesday">
-                            <h3 class="tuesday-h3">Tuesday</h3>
-                        </div>
-                        <div class="bubble" id="day3">
-                            <div class="foodinfo" id="day3name"></div>
-                            <div class="foodinfo" id="day3ingredients"></div>
-                            <div class="foodinfo" id="day3calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div4">
-                        <div class="box wednesday">
-                            <h3 class="wednesday-h3">Wednesday</h3>
-                        </div>
-                        <div class="bubble" id="day4">
-                            <div class="foodinfo" id="day4name"></div>
-                            <div class="foodinfo" id="day4ingredients"></div>
-                            <div class="foodinfo" id="day4calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div5">
-                        <div class="box thursday">
-                            <h3 class="thursday-h3">Thursday</h3>
-                        </div>
-                        <div class="bubble" id="day5">
-                            <div class="foodinfo" id="day5name"></div>
-                            <div class="foodinfo" id="day5ingredients"></div>
-                            <div class="foodinfo" id="day5calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div6">
-                        <div class="box friday">
-                            <h3 class="friday-h3">Friday</h3>
-                        </div>
-                        <div class="bubble" id="day6">
-                            <div class="foodinfo"id="day6name"></div>
-                            <div class="foodinfo" id="day6ingredients"></div>
-                            <div class="foodinfo" id="day6calories"></div>
-                        </div>
-                    </li>
-
-                    <li class="weekday" id="div7">
-                        <div class="box saturday">
-                            <h3 class="saturday-h3">Saturday</h3>
-                        </div>
-                        <div class="bubble" id="day7">
-                            <div class="foodinfo" id="day7name"></div>
-                            <div class="foodinfo" id="day7ingredients"></div>
-                            <div class="foodinfo" id="day7calories"></div>
-                        </div>
-                    </li>
-
+                    <p>select a date to get started</p>
                 </ul>
             </section>
 
@@ -130,9 +60,8 @@
 
         <script type="module" src="main.js" defer></script>
         <script type="module" src="assets/arrays.js"></script>
-        
+
         <script type="module" src="./util.js" defer></script>
     </body>
+
 </html>
-
-
