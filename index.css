@@ -74,7 +74,7 @@ header {
     background-color: hsla(174, 49%, 39%, 1);
 }
 #div4 {
-    background-color: hsla(44, 72%, 66%, 1);
+    background-color: #478290;
 }
 #div5 {
     background-color: hsla(27, 87%, 68%, 1);
@@ -96,7 +96,8 @@ header {
     background-color: hsla(174, 49%, 21%, 1);
 }
 .wednesday {
-    background-color: hsla(44, 72%, 46%, 1);
+    /*background-color: hsla(44, 72%, 46%, 1);*/
+    background-color: #478290
 }
 .thursday {
     background-color: hsla(27, 87%, 50%, 1); 
@@ -109,15 +110,18 @@ header {
 }
 
 .foodinfo {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
+    /* height: 100%; */
+    /* width: 100%; */
+    /*overflow: auto;*/
+    padding: 0em 0em 0.5em 0em;
+    text-align: 
+
 }
 
 
 .bubble {
     display: flex;
-    /*width: 82%; */
+    width: 60%; 
     height: 74%;
     /*background-color: rgba(255, 255, 255, 0.6); */
     justify-content: center;
@@ -130,19 +134,23 @@ header {
     color: white;
     font-weight: 600;
     font-size: 1.2em;
+    width: 100%;
 }
 
 #daycalories {
     color: white;
-
     font-weight: 800;
+    width: 100%;
 
 }
 
 #dayingredients {
     color: white;
     font-weight: 400;
-    font-size: .8em;
+    font-size: .9em;
+    width: 100%;
+    overflow: ;
+     
 }
 
 .setup {
@@ -202,7 +210,7 @@ header {
   font-size: 2rem;
   margin-bottom: -10px;
   margin: 1em 0em 0em 0em;
-  padding: 0em;
+  padding: 0.2em;
   width: 90%;
   border-top: 1px solid #323230;
   border-bottom: 1px solid #323230;
@@ -241,8 +249,11 @@ main {
 
 }
 .my-weekly-menu p {
-    text-align: left;
-    margin: 2em 0em 1em 0em;
+    text-align: center;
+    margin: 1.7em 0em 1em 0em;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #323230;
 }
 
 
@@ -258,7 +269,8 @@ main {
     color: whitesmoke;
     border-radius: 15px 0px 0px 15px;
     display: flex;
-    align-items:end
+    align-items: end;
+    width: 25%;
 }
 
 .weekday {
@@ -267,6 +279,8 @@ main {
     /*align-items: center; */
     justify-content: start;
     border-radius: 15px;
+    height: 8.75em;
+    
 }
 
 .weekday h3 {

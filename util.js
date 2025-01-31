@@ -85,7 +85,8 @@ export function createWeekdayStructure(day, index, dish) {
   const dishIngredients = document.createElement('div');
   dishIngredients.className = 'foodinfo';
   dishIngredients.id = 'dayingredients';
-  dishIngredients.innerText = dish.ingredients;
+  dishIngredients.innerText = dish.ingredients.join(", ");
+
 
   const dishCalories = document.createElement('div');
   dishCalories.className = 'foodinfo';
