@@ -18,10 +18,10 @@
         <header>
             <div class="header-group">
 
-                <section class="calendar">
-                    <!--<label for="date">Select Start date:</label>-->
+               <!-- <section class="calendar">
+                    <label for="date">Select Start date:</label>
                     <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
-                </section>
+                </section> -->
             
                 <section class="setup">
                     <h1>MENU PLANNER</h1>
@@ -32,6 +32,11 @@
                     <ul class="allergy-list" id="alergies">
 
                     </ul>
+                </section>
+
+                <section class="calendar">
+                    <!--<label for="date">Select Start date:</label>-->
+                    <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
                 </section>
             </div>
         </header>    
@@ -49,7 +54,7 @@
             </div>
             <section class="weekly-calendar">
                 <ul class="weekday-list" id="days">
-                    <p>select a date to get started</p>
+                    <p class = welcome>Make a selection to get started!</p>
                 </ul>
             </section>
 
@@ -62,6 +67,7 @@
 
         <footer>
             <p>This is the footer</p>
+            <!-- light style -->
         </footer>
 
         <script type="module" src="main.js" defer></script>
@@ -69,5 +75,4 @@
 
         <script type="module" src="./util.js" defer></script>
     </body>
-
 </html>
