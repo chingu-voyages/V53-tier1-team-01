@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,9 +17,14 @@
     <body>
         <header>
             <div class="header-group">
+
+                <section class="calendar">
+                    <!--<label for="date">Select Start date:</label>-->
+                    <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
+                </section>
+            
                 <section class="setup">
-                    <h1>Weekly Menu</h1>
-                    <i class="fa fa-copy copy icon"></i>
+                    <h1>MENU PLANNER</h1>
                 </section>
 
                 <section class="allergens">
@@ -26,25 +34,30 @@
                     </ul>
                 </section>
             </div>
-
-            <section class="calendar">
+        </header>    
+          <!--  <section class="calendar">
                 <label for="date">Select Start date:</label>
                 <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
             </section>
-        </header>
+        </header> -->
 
         <main>
+            <div class="my-weekly-menu">
+                <p>
+                    My Weekly Menu
+                </p>
+            </div>
             <section class="weekly-calendar">
                 <ul class="weekday-list" id="days">
                     <p>select a date to get started</p>
                 </ul>
             </section>
 
-            <section class="finalize">
+            <!--<section class="finalize">
                 <button>
                     finalize week
                 </button>
-            </section>
+            </section> -->
         </main>
 
         <footer>

@@ -1,4 +1,4 @@
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const days = ["Mon.", "Tues.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."];
 
 // use this function to generate random dishes, with ingredients
 export function generateRandomDishes(userAlergies, dishes, numberOfDishes) {
