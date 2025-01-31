@@ -51,6 +51,13 @@ header {
 
 }
 
+.welcome {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0em 0em 1.7em 0em;
+    color: #323230;
+}
+
 
 .food {
     width: 100px;
@@ -63,6 +70,8 @@ header {
     flex-direction: row;
     width:90%;
 }
+
+
 
 #div1 {
     background-color: hsla(190, 44%, 24%, 1);
@@ -237,7 +246,7 @@ main {
          display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 2em 2em 0em 0em;
+    border-radius: 2em 2em 2em 2em;
     border: 0px solid;
 
 }
@@ -404,3 +413,5 @@ main {
     transform: translate(-50%, -50%);
     font-weight: bold;
 }
+
+/*Calendar*/
