@@ -91,7 +91,7 @@ export function createWeekdayStructure(day, index, dish) {
   const dishCalories = document.createElement('div');
   dishCalories.className = 'foodinfo';
   dishCalories.id = 'daycalories';
-  dishCalories.innerText = dish.calories;
+  dishCalories.innerText = dish.calories + " Calories";
 
   // Append the foodinfo divs to the bubble div
   bubbleDiv.appendChild(dishName);
