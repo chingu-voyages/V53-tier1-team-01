@@ -6,15 +6,18 @@ import {
     createWeekdayStructure
 } from "./util.js";
 
+
 //
+const today = new Date();
 let userAlergies = new Set();
-let userPickedStartDate = 0;
+let userPickedStartDate = (new Date).getDay();
 
 const ulAlergies = document.getElementById("alergies");
-
 //
+const generateMenuButton = document.getElementById('generateBtn');
+generateMenuButton.addEventListener("click", handleGenerateMenuBtnClick)
+
 const calendarStartDate = document.getElementById('calendarStartDatePicker');
-const today = new Date();
 const formattedDate = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
 calendarStartDate.min = formattedDate;
 
@@ -25,10 +28,11 @@ calendarStartDate.addEventListener('input', function (e) {
     //assigned Monday to index 0, Tuesday to index 1, Wednesday to index 2, Thursday to index 3, Friday to index 4, Saturday to index 5, Sunday to index 6
     let weekDay = clickedDay.getDay();
 
-    let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
-    console.log(randomDishes);
+    
+    // console.log(randomDishes);
     userPickedStartDate = weekDay;
-    generateWeeklyFood(randomDishes, userPickedStartDate);
+    // let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
+    // generateWeeklyFood(randomDishes, userPickedStartDate);
 });
 
 allergies.forEach(allergy => {
@@ -66,6 +70,11 @@ function handleCheckBoxClick(event) {
         userAlergies.add(checkBoxValue);
     }
 
+    // let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
+    // generateWeeklyFood(randomDishes, userPickedStartDate);
+}
+
+function handleGenerateMenuBtnClick() {
     let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
     generateWeeklyFood(randomDishes, userPickedStartDate);
 }
