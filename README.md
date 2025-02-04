@@ -1,12 +1,13 @@
-# Project Title
+# Menu Planner
 
 Here we will put detail about our current project. which will be an over view about
 the project
 
 ## Features
 
-- users can perform x, y, z
-- additional features
+- Generate unique menues for a week
+- Ability to pick the start day of the week
+- Managers can select Alergies to avoid in the menu
 
 ## Running the project
 
