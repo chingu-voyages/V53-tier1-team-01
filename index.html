@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://kit.fontawesome.com/c0ddac57d5.js" crossorigin="anonymous"></script>
 
         <title>Your Page Title</title>
     </head>
@@ -34,10 +35,15 @@
                     </ul>
                 </section>
 
-                <section class="calendar">
-                    <!--<label for="date">Select Start date:</label>-->
-                    <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
-                </section>
+                <div class="selection"> 
+                    <section class="calendar">
+                        <!--<label for="date">Select Start date:</label>-->
+                        <input type="date" id="calendarStartDatePicker" name="calendarStartDatePicker">
+                    </section>
+
+                    <button class="generate-button" id="generateBtn">Generate Menu</button>
+                </div>
+
             </div>
         </header>    
           <!--  <section class="calendar">
@@ -66,7 +72,10 @@
         </main>
 
         <footer>
-            <p>GitHub Repo (logo) </logo></p>
+            <p>GitHub Repo</p>
+            <a href="https://github.com/chingu-voyages/V53-tier1-team-01">
+                <i class="fa-brands fa-github"></i>
+            </a> 
             <!-- light style -->
         </footer>
 
