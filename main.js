@@ -61,6 +61,7 @@ allergies.forEach(allergy => {
     ulAlergies.appendChild(li);
 });
 
+//allergy boxes
 function handleCheckBoxClick(event) {
     let checkBoxValue = event.target.value;
 
@@ -77,4 +78,34 @@ function handleCheckBoxClick(event) {
 function handleGenerateMenuBtnClick() {
     let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
     generateWeeklyFood(randomDishes, userPickedStartDate);
+
+    const header = document.querySelector('.setup');
+
+
+    if (header.classList.contains('fade-in')) {
+        header.classList.remove('fade-in');
+    } else {header.classList.add('fade-in')};
+    
+   // header.classList.toggle('fade-in2');
+   
+     
+    console.log(header.classList);
+ 
+        
 }
+/*
+document.addEventListener("DOMContentLoaded", function () {
+    const weekdays = document.querySelectorAll(".weekday");
+    console.log(`these are the ${weekdays}`);
+
+    weekdays.forEach((weekday) => {
+        weekday.classList.add("show-box"); // Adds the class to trigger animation
+    });
+});*/
+
+
+/*const header = document.querySelector('.setup');
+ header.addEventListener('click', function() {
+    header.classList.toggle('fade-in');
+    console.log(header.classList);
+ }); */
