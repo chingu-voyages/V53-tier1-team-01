@@ -101,6 +101,7 @@ export function createWeekdayStructure(day, index, dish) {
   // Append the bubble div to the list item
   li.appendChild(bubbleDiv);
 
+
   // Append the entire structure to the document (e.g., to a parent ul)
   return li;
 }
