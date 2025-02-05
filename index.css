@@ -295,7 +295,21 @@ main {
     justify-content: start;
     border-radius: 15px;
     height: 8.75em;
-    
+    /*test */
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.7s ease;
+    color: aqua; 
+    opacity: 10;
+        
+}
+
+.show-box {
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.7s ease;
+    color: aqua;
+    opacity: 1;
+    /* Make visible */
+    transform: translateY(0);
 }
 
 .weekday h3 {
@@ -405,8 +419,10 @@ main {
     color: #323230;
 }
 
+
 a {
     text-decoration: none;
+    color: #323230;
 }
 
 a:visited {
@@ -481,6 +497,31 @@ footer i {
     font-size: 2em;
     margin-bottom: 20px;
 }
+
+/*Trial Fade*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /*=====================Tablet styles=============================*/
 @media screen and (min-width: 710px) and (max-width: 1024px) {
