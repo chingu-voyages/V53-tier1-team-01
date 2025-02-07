@@ -38,7 +38,7 @@ calendarStartDate.addEventListener('input', function (e) {
 allergies.forEach(allergy => {
     // Create a <li> element
     const li = document.createElement("li");
-    li.className = "allergen";
+    li.className = "allergen flex justify-center align-center";
 
     // Create the <input> checkbox
     const checkbox = document.createElement("input");
@@ -79,7 +79,7 @@ function handleGenerateMenuBtnClick() {
     let randomDishes = generateRandomDishes(userAlergies, dishes, 7);
     generateWeeklyFood(randomDishes, userPickedStartDate);
 
-    const header = document.querySelector('.setup');
+    /*const header = document.querySelector('.setup');
 
 
     if (header.classList.contains('fade-in')) {
@@ -89,7 +89,7 @@ function handleGenerateMenuBtnClick() {
    // header.classList.toggle('fade-in2');
    
      
-    console.log(header.classList);
+    console.log(header.classList);*/
  
         
 }
