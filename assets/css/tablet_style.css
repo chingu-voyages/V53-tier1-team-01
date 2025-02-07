@@ -1,68 +1,70 @@
 /*=====================Tablet styles=============================*/
 @media screen and (min-width: 710px) and (max-width: 1024px) {
-
-  .bubble { 
-      height: 100%;
-      padding-left: 0px;
+  /*===Header Styles======================================================================================*/
+  .setup h1 {
+    font-size: 4rem;
   }
 
-  #dayname {
-      font-size: 2.0em;
-  }
-  
-  #daycalories {
-      font-size: 1.6em;
-  }
-  
-  #dayingredients {
-      font-size: 1.4em;
-      font-weight: 500;
+  /*===Allergens======================================================================================*/
+  .allergens h2 {
+    font-size: 2.5rem;
   }
 
-  .foodinfo {
-      padding: 0em 0em 0.2em 0em;
-  }    
-
-  .weekday {
-      padding: 10px 0 10px 0;
-  }
-
-  .my-weekly-menu p {
-      font-size: 2.5em;
-  }
-
-  .box {
-      font-weight: 500;
-      font-size: 1.2em;
-  }
-
-  .allergen p{
-      font-size: 1.4em;
-  }
-
-  .checkbox {
-      width: 25px;
-      height: 25px;
+  .allergen p {
+    font-size: 1.4em;
   }
 
   .allergen input {
-      margin: 21px 2px 0em 0em;
+    margin: 21px 2px 0em 0em;
   }
 
-  .allergens h2 {
-      font-size: 2.5rem;
+  .checkbox {
+    width: 25px;
+    height: 25px;
   }
 
-  .setup h1 {
-      font-size: 4rem;
-  }
-
-  #calendarStartDatePicker {
-      font-size: 25px;
-  }
-
+  /*===Selectors======================================================================================*/
   .selection {
-      flex-direction: row;
+    flex-direction: row;
   }
 
+  .calendarStartDatePicker {
+    font-size: 25px;
+  }
+
+  /*===Calendar======================================================================================*/
+  .my-weekly-menu p {
+    font-size: 2.5em;
+  }
+
+  .weekday {
+    padding: 10px 0 10px 0;
+  }
+
+  .box {
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+
+  .bubble {
+    height: 100%;
+    padding-left: 0px;
+  }
+
+  .foodinfo {
+    padding: 0em 0em 0.2em 0em;
+  }
+
+  .dayname {
+    font-size: 2em;
+  }
+
+  .daycalories {
+    font-size: 1.6em;
+  }
+
+  .dayingredients {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
 }

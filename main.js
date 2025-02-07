@@ -44,6 +44,35 @@ allergies.forEach(allergy => {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.className = "checkbox";
+    checkbox.id = allergy.toLowerCase().replace(/\s+/g, "-"); 
+    checkbox.value = allergy;
+
+    
+
+    checkbox.addEventListener("click", handleCheckBoxClick);
+
+    // Create the <p> element for the allergy text
+    const p = document.createElement("p");
+    p.textContent = allergy;
+
+    // Append the checkbox and <p> to the <li>
+    li.appendChild(checkbox);
+    li.appendChild(p);
+
+    // Append the <li> to the <ul>
+    ulAlergies.appendChild(li);
+});
+
+
+allergies.forEach(allergy => {
+    // Create a <li> element
+    const li = document.createElement("li");
+    li.className = "allergen flex justify-center align-center";
+
+    // Create the <input> checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "checkbox";
     checkbox.id = allergy.toLowerCase().replace(/\s+/g, "-");
     checkbox.value = allergy;
 
@@ -60,6 +89,8 @@ allergies.forEach(allergy => {
     // Append the <li> to the <ul>
     ulAlergies.appendChild(li);
 });
+
+
 
 //allergy boxes
 function handleCheckBoxClick(event) {

@@ -56,8 +56,8 @@ export function generateWeeklyFood(randomDishes, userPickedStartDate) {
 export function createWeekdayStructure(day, index, dish) {
   // Create the parent list item element
   const li = document.createElement('li');
-  li.className = 'weekday';
-  li.id = 'div' + (index + 1);
+  li.className = `weekday ${'div' + (index + 1)}`;
+  /*li.id = 'div' + (index + 1); */
 
   // Create the first child div with Sunday heading
   const boxDiv = document.createElement('div');
@@ -77,20 +77,20 @@ export function createWeekdayStructure(day, index, dish) {
 
   // Create the foodinfo child divs
   const dishName = document.createElement('div');
-  dishName.className = 'foodinfo';
-  dishName.id = 'dayname';
+  dishName.className = 'foodinfo dayname';
+  /*dishName.id = 'dayname'; */
   dishName.innerText = dish.name;
 
 
   const dishIngredients = document.createElement('div');
-  dishIngredients.className = 'foodinfo';
-  dishIngredients.id = 'dayingredients';
+  dishIngredients.className = 'foodinfo dayingredients';
+  /*dishIngredients.id = 'dayingredients'; */
   dishIngredients.innerText = dish.ingredients.join(", ");
 
 
   const dishCalories = document.createElement('div');
-  dishCalories.className = 'foodinfo';
-  dishCalories.id = 'daycalories';
+  dishCalories.className = 'foodinfo daycalories';
+  /*dishCalories.id = 'daycalories';*/
   dishCalories.innerText = dish.calories + " Calories";
 
   // Append the foodinfo divs to the bubble div
@@ -104,4 +104,4 @@ export function createWeekdayStructure(day, index, dish) {
 
   // Append the entire structure to the document (e.g., to a parent ul)
   return li;
-}
+} 

@@ -1,27 +1,85 @@
 /*========================Desktop styles========================*/
 @media screen and (min-width: 1025px) {
+  /*===General Styles======================================================================================*/
+  .container {
+    max-width: 1200px;
+  }
 
-    .container {
-        max-width: 1200px;
-    }
+  /*===Header Styles======================================================================================*/
+  .setup {
+    padding: 0.65em 0;
+  }
 
+  .setup h1 {
+    font-size: 3rem;
+  }
+
+  /*===Allergens======================================================================================*/
   .allergens {
     margin: 0px 0px 1.1em 0px;
+  }
+
+  .allergens h2 {
+    font-size: 1.5em;
+    margin: 0em 0px 0em;
+    /* margin-bottom: 15px; */
   }
 
   .allergen p {
     font-size: 1.2rem;
   }
 
-  .weekday-list {
+  /*===Selectors======================================================================================*/
+  .selection {
     flex-direction: row;
+    padding: 0em 0em 1.1em 0em;
   }
 
+  .calendarStartDatePicker {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .generate-button {
+    font-size: 1em;
+  }
+
+  /*===Calendar======================================================================================*/
+  main {
+    /* height: 80%; */
+    padding-bottom: 28px;
+  }
+
+  .my-weekly-menu p {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 8px 0px 8px 0px;
+  }
+
+  .welcome {
+    width: 100%;
+  }
+
+  .weekly-calendar {
+    width: 98%;
+    /*height: 350px;*/
+    height: 320px;
+  }
+  .weekday-list {
+    gap: 10px;
+    margin: 0;
+    flex-direction: row;
+  }
   .weekday {
     flex-direction: column;
     height: auto;
     gap: 2%;
     padding: 0.5rem 0;
+  }
+
+  .weekday h3 {
+    font-size: 2.25em;
+    font-weight: 300;
   }
 
   .box {
@@ -33,7 +91,6 @@
     margin: 0px 0px 0px 0px;
     width: 100%;
     text-align: center;
-    
   }
 
   .bubble {
@@ -43,79 +100,14 @@
     justify-content: start;
   }
 
-  .weekly-calendar {
-    width: 98%;
-    /*height: 350px;*/
-    height: 320px;
-  }
-  .weekday-list {
-    gap: 10px;
-    margin: 0;
-  }
-
-  main {
-    /* height: 80%; */
-    padding-bottom: 28px;
-  }
-
-  #dayingredients {
-    width: 40%;
-    font-weight: 500;
-    font-size: 1.2em;
-  }
-
-  #dayname {
+  .dayname {
     font-weight: 500;
     font-size: 1.4em;
   }
 
-  .weekday h3 {
-    font-size: 2.25em;
-    font-weight: 300;
-  }
-
-  .my-weekly-menu p {
-    font-size: 1.8em;
-    font-weight: 400;
-    margin: 8px 0px 8px 0px;
-  }
-
-  .setup h1 {
-    font-size: 3rem;
-  }
-
-  .allergens h2 {
-    font-size: 1.5em;
-    margin: 0em 0px 0em;
-    /* margin-bottom: 15px; */
-  }
-
-  #calendarStartDatePicker {
-    font-size: 20px;
+  .dayingredients {
+    width: 40%;
     font-weight: 500;
-  }
-
-  .welcome {
-    width: 100%;
-  }
-
-  .selection {
-    flex-direction: row;
-    padding: 0em 0em 1.1em 0em;
-  }
-
-  .setup {
-    padding: .65em 0;
-  }
-  .generate-button {
-    font-size: 1em;
-  }
-
-  #calendarStartDatePicker {
-
-    font-size: 16px;
-
+    font-size: 1.2em;
   }
 }
-
-
