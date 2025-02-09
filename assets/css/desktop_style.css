@@ -38,6 +38,7 @@
   .calendarStartDatePicker {
     font-size: 16px;
     font-weight: 500;
+    width: 125px;
   }
 
   .generate-button {
