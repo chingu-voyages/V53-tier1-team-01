@@ -64,7 +64,7 @@ allergies.forEach(allergy => {
 });
 
 
-allergies.forEach(allergy => {
+/*allergies.forEach(allergy => {
     // Create a <li> element
     const li = document.createElement("li");
     li.className = "allergen flex justify-center align-center";
@@ -88,7 +88,7 @@ allergies.forEach(allergy => {
 
     // Append the <li> to the <ul>
     ulAlergies.appendChild(li);
-});
+}); */
 
 
 
