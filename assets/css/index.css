@@ -162,7 +162,7 @@ header {
   flex-direction: column;
 }
 
-.calendar {
+#calendar {
   display: flex;
   justify-content: center;
 }

@@ -1,5 +1,5 @@
-import { dishes } from './assets/arrays.js';
-import { allergies } from './assets/arrays.js';
+import { dishes } from './arrays.js';
+import { allergies } from './arrays.js';
 import {
     generateRandomDishes,
     generateWeeklyFood,
