@@ -320,6 +320,26 @@ main {
   flex-direction: column;
 }
 
+/*animation*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      /*transform: translateY(10px);*/
+      transform: translateX(10px);
+
+  }
+  to {
+      opacity: 1;
+     /* transform: translateY(0); */
+      transform: translateX(0px);
+
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
 .foodinfo {
   padding: 0em 0em 0.5em 0em;
 }
@@ -355,3 +375,5 @@ footer i {
   font-size: 2em;
   margin-bottom: 20px;
 }
+
+
