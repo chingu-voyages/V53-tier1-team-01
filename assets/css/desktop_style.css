@@ -1,114 +1,114 @@
 /*========================Desktop styles========================*/
 @media screen and (min-width: 1025px) {
-  /*===General Styles======================================================================================*/
-  .container {
-    max-width: 1200px;
-  }
+	/*===General Styles======================================================================================*/
+	.container {
+		max-width: 1200px;
+	}
 
-  /*===Header Styles======================================================================================*/
-  .setup {
-    padding: 0.65em 0;
-  }
+	/*===Header Styles======================================================================================*/
+	.title {
+		padding: 0.65em 0;
+	}
 
-  .setup h1 {
-    font-size: 3rem;
-  }
+	.title h1 {
+		font-size: 3rem;
+	}
 
-  /*===Allergens======================================================================================*/
-  .allergens {
-    margin: 0px 0px 1.1em 0px;
-  }
+	/*===Allergens======================================================================================*/
+	.allergens {
+		margin: 0px 0px 1.1em 0px;
+	}
 
-  .allergens h2 {
-    font-size: 1.5em;
-    margin: 0em 0px 0em;
-    /* margin-bottom: 15px; */
-  }
+	.allergens h2 {
+		font-size: 1.5em;
+		margin: 0em 0px 0em;
+		/* margin-bottom: 15px; */
+	}
 
-  .allergen p {
-    font-size: 1.2rem;
-  }
+	.allergen p {
+		font-size: 1.2rem;
+	}
 
-  /*===Selectors======================================================================================*/
-  .selection {
-    flex-direction: row;
-    padding: 0em 0em 1.1em 0em;
-  }
+	/*===Selectors======================================================================================*/
+	.selection {
+		flex-direction: row;
+		padding: 0em 0em 1.1em 0em;
+	}
 
-  .calendarStartDatePicker {
-    font-size: 16px;
-    font-weight: 500;
-    width: 125px;
-  }
+	.calendarStartDatePicker {
+		font-size: 16px;
+		font-weight: 500;
+		width: 125px;
+	}
 
-  .generate-button {
-    font-size: 1em;
-  }
+	.generate-button {
+		font-size: 1em;
+	}
 
-  /*===Calendar======================================================================================*/
-  main {
-    /* height: 80%; */
-    padding-bottom: 28px;
-  }
+	/*===Calendar======================================================================================*/
+	main {
+		/* height: 80%; */
+		padding-bottom: 28px;
+	}
 
-  .my-weekly-menu p {
-    font-size: 1.8em;
-    font-weight: 400;
-    margin: 8px 0px 8px 0px;
-  }
+	.my-weekly-menu p {
+		font-size: 1.8em;
+		font-weight: 400;
+		margin: 8px 0px 8px 0px;
+	}
 
-  .welcome {
-    width: 100%;
-  }
+	.welcome {
+		width: 100%;
+	}
 
-  .weekly-calendar {
-    width: 98%;
-    /*height: 350px;*/
-    height: 320px;
-  }
-  .weekday-list {
-    gap: 10px;
-    margin: 0;
-    flex-direction: row;
-  }
-  .weekday {
-    flex-direction: column;
-    height: auto;
-    gap: 2%;
-    padding: 0.5rem 0;
-  }
+	.weekly-calendar {
+		width: 98%;
+		/*height: 350px;*/
+		height: 320px;
+	}
+	.weekday-list {
+		gap: 10px;
+		margin: 0;
+		flex-direction: row;
+	}
+	.weekday {
+		flex-direction: column;
+		height: auto;
+		gap: 2%;
+		padding: 0.5rem 0;
+	}
 
-  .weekday h3 {
-    font-size: 2.25em;
-    font-weight: 300;
-  }
+	.weekday h3 {
+		font-size: 2.25em;
+		font-weight: 300;
+	}
 
-  .box {
-    width: 100%;
-    height: auto;
-  }
+	.box {
+		width: 100%;
+		height: auto;
+	}
 
-  .box h3 {
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    text-align: center;
-  }
+	.box h3 {
+		margin: 0px 0px 0px 0px;
+		width: 100%;
+		text-align: center;
+	}
 
-  .bubble {
-    padding-left: 0px;
-    width: 85%;
-    align-items: flex-start;
-    justify-content: start;
-  }
+	.bubble {
+		padding-left: 0px;
+		width: 85%;
+		align-items: flex-start;
+		justify-content: start;
+	}
 
-  .dayname {
-    font-weight: 500;
-    font-size: 1.4em;
-  }
+	.dayname {
+		font-weight: 500;
+		font-size: 1.4em;
+	}
 
-  .dayingredients {
-    width: 40%;
-    font-weight: 500;
-    font-size: 1.2em;
-  }
+	.dayingredients {
+		width: 40%;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
 }

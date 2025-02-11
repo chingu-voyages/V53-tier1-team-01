@@ -1,71 +1,71 @@
 /*=====================Tablet styles=============================*/
 @media screen and (min-width: 710px) and (max-width: 1024px) {
-  /*===Header Styles======================================================================================*/
-  .setup h1 {
-    font-size: 4rem;
-  }
+	/*===Header Styles======================================================================================*/
+	.title h1 {
+		font-size: 4rem;
+	}
 
-  /*===Allergens======================================================================================*/
-  .allergens h2 {
-    font-size: 2.5rem;
-  }
+	/*===Allergens======================================================================================*/
+	.allergens h2 {
+		font-size: 2.5rem;
+	}
 
-  .allergen p {
-    font-size: 1.4em;
-  }
+	.allergen p {
+		font-size: 1.4em;
+	}
 
-  .allergen input {
-    margin: 21px 2px 0em 0em;
-  }
+	.allergen input {
+		margin: 21px 2px 0em 0em;
+	}
 
-  .checkbox {
-    width: 25px;
-    height: 25px;
-  }
+	.checkbox {
+		width: 25px;
+		height: 25px;
+	}
 
-  /*===Selectors======================================================================================*/
-  .selection {
-    flex-direction: row;
-  }
+	/*===Selectors======================================================================================*/
+	.selection {
+		flex-direction: row;
+	}
 
-  .calendarStartDatePicker {
-    font-size: 25px;
-    font-weight: 500;
-  }
+	.calendarStartDatePicker {
+		font-size: 25px;
+		font-weight: 500;
+	}
 
-  /*===Calendar======================================================================================*/
-  .my-weekly-menu p {
-    font-size: 2.5em;
-  }
+	/*===Calendar======================================================================================*/
+	.my-weekly-menu p {
+		font-size: 2.5em;
+	}
 
-  .weekday {
-    padding: 10px 0 10px 0;
-  }
+	.weekday {
+		padding: 10px 0 10px 0;
+	}
 
-  .box {
-    font-weight: 500;
-    font-size: 1.2em;
-  }
+	.box {
+		font-weight: 500;
+		font-size: 1.2em;
+	}
 
-  .bubble {
-    height: 100%;
-    padding-left: 0px;
-  }
+	.bubble {
+		height: 100%;
+		padding-left: 0px;
+	}
 
-  .foodinfo {
-    padding: 0em 0em 0.2em 0em;
-  }
+	.foodinfo {
+		padding: 0em 0em 0.2em 0em;
+	}
 
-  .dayname {
-    font-size: 2em;
-  }
+	.dayname {
+		font-size: 2em;
+	}
 
-  .daycalories {
-    font-size: 1.6em;
-  }
+	.daycalories {
+		font-size: 1.6em;
+	}
 
-  .dayingredients {
-    font-size: 1.4em;
-    font-weight: 500;
-  }
+	.dayingredients {
+		font-size: 1.4em;
+		font-weight: 500;
+	}
 }
