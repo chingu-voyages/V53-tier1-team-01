@@ -77,19 +77,28 @@ export function createWeekdayStructure(day, index, dish) {
 
   // Create the foodinfo child divs
   const dishName = document.createElement('div');
-  dishName.className = 'foodinfo dayname';
+  dishName.className = 'dish-name';
   /*dishName.id = 'dayname'; */
   dishName.innerText = dish.name;
 
 
-  const dishIngredients = document.createElement('div');
-  dishIngredients.className = 'foodinfo dayingredients';
+  const dishIngredients = document.createElement('ul');
+  dishIngredients.className = 'foodinfo dish-ingredients flex flex-wrap';
   /*dishIngredients.id = 'dayingredients'; */
-  dishIngredients.innerText = dish.ingredients.join(", ");
+  // dishIngredients.innerText = dish.ingredients.join(", ");
+
+  dish.ingredients.forEach(ingredient => {
+      // create li
+      const li = document.createElement("li");
+      li.innerHTML = ingredient;
+      dishIngredients.appendChild(li);
+      // append it to dishIngredients
+  });
+
 
 
   const dishCalories = document.createElement('div');
-  dishCalories.className = 'foodinfo daycalories';
+  dishCalories.className = 'foodinfo dish-calories';
   /*dishCalories.id = 'daycalories';*/
   dishCalories.innerText = dish.calories + " Calories";
 
