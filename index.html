@@ -37,35 +37,36 @@
           <ul class="allergy-list" id="alergies"></ul>
         </section>
 
-        <div class="selection">
+        <div class="selection flex flex-y align-center ">
           <section class="calendar">
             <input
               type="date"
               id="calendarStartDatePicker" 
               name="calendarStartDatePicker"
-              class="calendarStartDatePicker"
+              class="calendarStartDatePicker btn-primary"
             />
           </section>
 
-          <button class="generate-button" id="generateBtn">
+          <button class="btn btn-primary" id="generateBtn">
             Generate Menu
           </button>
         </div>
       </div>
     </header>
 
-    <main class="container">
-      <div class="my-weekly-menu">
-        <p>My Weekly Menu</p>
-      </div>
+    <main class="container flex flex-y align-center">
+      <h3 class="sub-heading">My Weekly Menu</h3>
+      <!-- <div class="my-weekly-menu">
+        
+      </div> -->
       <section class="weekly-calendar">
-        <ul class="weekday-list" id="days">
+        <ul class="weekday-list flex flex-y justify-between" id="days">
           <p class="welcome">Make a selection to get started!</p>
         </ul>
       </section>
     </main>
 
-    <footer class="flex justify-center aligh-center container">
+    <footer class="flex justify-center align-center container">
       <a href="https://github.com/chingu-voyages/V53-tier1-team-01">
         <p>GitHub Repo</p>
       </a>

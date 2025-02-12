@@ -14,10 +14,6 @@
 		font-size: 1.4em;
 	}
 
-	.allergen input {
-		margin: 21px 2px 0em 0em;
-	}
-
 	.checkbox {
 		width: 25px;
 		height: 25px;
@@ -29,17 +25,13 @@
 	}
 
 	.calendarStartDatePicker {
-		font-size: 25px;
+		
 		font-weight: 500;
 	}
 
 	/*===Calendar======================================================================================*/
 	.my-weekly-menu p {
 		font-size: 2.5em;
-	}
-
-	.weekday {
-		padding: 10px 0 10px 0;
 	}
 
 	.box {

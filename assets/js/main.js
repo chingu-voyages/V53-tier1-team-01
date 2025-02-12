@@ -35,6 +35,21 @@ calendarStartDate.addEventListener('input', function (e) {
     // generateWeeklyFood(randomDishes, userPickedStartDate);
 });
 
+/**
+ * 
+ * 
+ * <label>
+        <input type="checkbox" name="example"> Click me
+    </label>
+
+ * 
+ * 
+ * 
+ *  <input type="checkbox" id="checkbox1" name="example">
+    <label for="checkbox1">Click me</label>
+ * 
+ */
+
 allergies.forEach(allergy => {
     // Create a <li> element
     const li = document.createElement("li");
@@ -52,12 +67,13 @@ allergies.forEach(allergy => {
     checkbox.addEventListener("click", handleCheckBoxClick);
 
     // Create the <p> element for the allergy text
-    const p = document.createElement("p");
-    p.textContent = allergy;
+    const label = document.createElement("label");
+    label.textContent = allergy;
+    label.htmlFor = allergy.toLowerCase().replace(/\s+/g, "-"); 
 
     // Append the checkbox and <p> to the <li>
     li.appendChild(checkbox);
-    li.appendChild(p);
+    li.appendChild(label);
 
     // Append the <li> to the <ul>
     ulAlergies.appendChild(li);
