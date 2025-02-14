@@ -355,17 +355,15 @@ main {
 }
 
 .dish-calories {
-	font-weight: 800;
+	font-weight: 700;
 }
 
 .dish-ingredients {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 0.9em;
-
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
-
 	margin-bottom: 0.6rem;
 }
 
@@ -685,19 +683,7 @@ footer {
 	font-size: 1.2em;
 	width: 100%;
   }
-  
-  .dish-calories {
-	font-weight: 800;
-  }
-  
-  .dish-ingredients {
-	font-weight: 700;
-	font-size: 0.9em;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	margin-bottom: 0.6rem;
-  }
+
   
   /*===Footer======================================================================================*/
   footer {
