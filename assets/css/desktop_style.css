@@ -1,113 +1,54 @@
 /*========================Desktop styles========================*/
 @media screen and (min-width: 1025px) {
-	/*===General Styles======================================================================================*/
-	.container {
-		max-width: 1200px;
-	}
+  .sub-heading {
+    margin: 1.5rem 0;
+  }
+  /*===Allergens======================================================================================*/
+  .allergens {
+    margin-bottom: 0.5rem;
+  }
 
-	/*===Header Styles======================================================================================*/
-	.title {
-		padding: 0.65em 0;
-	}
+  /*===Selectors======================================================================================*/
+  .selection {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
 
-	.title h1 {
-		font-size: 3rem;
-	}
+  /*===Calendar======================================================================================*/
+  .weekly-calendar {
+    min-height: 320px;
+    margin: 0;
+  }
 
-	/*===Allergens======================================================================================*/
-	.allergens {
-		margin: 0px 0px 1.1em 0px;
-	}
+  .weekday-list {
+    gap: 0.5rem;
+    flex-direction: row;
+    margin-top: 0;
+  }
 
-	.allergens h2 {
-		font-size: 1.5em;
-		margin: 0em 0px 0em;
-		/* margin-bottom: 15px; */
-	}
+  .weekday {
+    height: auto;
+    gap: 2%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+  }
 
-	.allergen p {
-		font-size: 1.2rem;
-	}
+  .box {
+    align-items: flex-start;
+    height: auto;
+  }
 
-	/*===Selectors======================================================================================*/
-	.selection {
-		flex-direction: row;
-		/* padding: 0em 0em 1.1em 0em; */
-	}
+  .dish-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0;
+  }
 
-	.calendarStartDatePicker {
-		/* font-size: 16px; */
-		/* font-weight: 500; */
-		width: 125px;
-	}
+  .dish-ingredients {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
 
-	.generate-button {
-		font-size: 1em;
-	}
-
-	/*===Calendar======================================================================================*/
-	main {
-		/* height: 80%; */
-		padding-bottom: 28px;
-	}
-
-	.my-weekly-menu p {
-		font-size: 1.8em;
-		font-weight: 400;
-		margin: 8px 0px 8px 0px;
-	}
-
-	.welcome {
-		width: 100%;
-	}
-
-	.weekly-calendar {
-		width: 98%;
-		/*height: 350px;*/
-		height: 320px;
-	}
-	.weekday-list {
-		gap: 10px;
-		margin: 0;
-		flex-direction: row;
-	}
-	.weekday {
-		flex-direction: column;
-		height: auto;
-		gap: 2%;
-	}
-
-	.weekday h3 {
-		font-size: 2.25em;
-		font-weight: 300;
-	}
-
-	.box {
-		width: 100%;
-		height: auto;
-	}
-
-	.box h3 {
-		margin: 0px 0px 0px 0px;
-		width: 100%;
-		text-align: center;
-	}
-
-	.bubble {
-		/* padding-left: 0px;
-		width: 85%;
-		align-items: flex-start;
-		justify-content: start; */
-	}
-
-	.dayname {
-		font-weight: 500;
-		font-size: 1.4em;
-	}
-
-	.dayingredients {
-		width: 40%;
-		font-weight: 500;
-		font-size: 1.2em;
-	}
 }
