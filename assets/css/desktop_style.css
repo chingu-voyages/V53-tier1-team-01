@@ -1,6 +1,5 @@
 /*========================Desktop styles========================*/
 @media screen and (min-width: 1025px) {
-
   .title {
     padding: 0.4em 0;
     font-size: 2.5em;
@@ -79,9 +78,4 @@
     font-size: 1.2rem;
     gap: 0rem;
   }
-
-  /*footer {
-   position: fixed; 
-    bottom: 0; 
-  } */
 }
