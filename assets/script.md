@@ -1,16 +1,37 @@
-## overview/team structure
+## overview/team structure - [Demo Linkd](https://drive.google.com/file/d/1EUoSzOY6S4tg31Y36q0BU1T1EHPKgaE0/view?usp=drive_link)
 
-This project was coordinated through an organization called Chingu, which hosts 6 week remote team projects. Our team consisted of 4 developers, and our task was to complete a fully responsive meal-scheduling app within 6 1-week sprints. The goal was to use frontend languages, tools, or libraries of preference to develop a fully responsive single-page application to facilitate weekly menu scheduling that is user-friendly, accessible, and visually appealing. Minimum functionality criteria included allowing managers the ability to schedule menus from a set of unique dishes for an upcoming week, provide dish details (name, ingredients, calories), and the ability to filter for allergens.  
+This project was coordinated through an organization called Chingu, 
+which hosts 6 week remote team projects. Our team consisted of 4 developers, 
+and our task was to complete a fully responsive meal-scheduling app within 
+6 1-week sprints. The goal was to use frontend languages, tools, or 
+libraries of preference to develop a fully responsive single-page 
+application to facilitate weekly menu scheduling that is user-friendly, 
+accessible, and visually appealing. Minimum functionality criteria 
+included allowing managers the ability to schedule menus from a set of 
+unique dishes for an upcoming week, provide dish details (name, 
+ingredients, calories), and the ability to filter for allergens.  
 
-Since our team had different schedules, we used discord for communication through messaging and voice chats. We used the Agile Methodology to manage our project, which included updating each other with daily standups describing the work we had done and next steps for the project. The coding was completed through pair programming with 2-4 developers per session.
+Since our team had different schedules, we used discord for communication 
+through messaging and voice chats. We used the Agile Methodology to 
+manage our project, which included updating each other with daily 
+standups describing the work we had done and next steps for the project. 
+The coding was completed through pair programming with 2-4 developers 
+per session.
 
-Throughout the project, Trello was used to organize tasks that needed to be done, were being worked on, and were completed.
-![screnshot](assets/img/trello.png)
+Throughout the project, Trello was used to organize tasks that 
+needed to be done, were being worked on, and were completed.
+![screnshot](/assets/img/trello.png)
 
 
-Unfortunately, our team didn't have a UI designer. Instead, our developers created a responsive design ourselves using miro, a collaborative whiteboarding platform, to brainstorm. 
+Unfortunately, our team didn't have a UI designer. Instead, our 
+developers created a responsive design ourselves using miro, 
+a collaborative whiteboarding platform, to brainstorm. 
 
-We would meet 5 times a week for multiple hours per session to pair program. We used two extentions called Liveshare and Livepreview, which allowed us to work in real-time and see the site's preview in real-time. Our team used git with gitHub to for version control and sharing our code.
+We would meet 5 times a week for multiple hours per 
+session to pair program. We used two extentions called 
+Liveshare and Livepreview, which allowed us to work in 
+real-time and see the site's preview in real-time. Our 
+team used git with gitHub to for version control and sharing our code.
 
 ## Describe code
 
